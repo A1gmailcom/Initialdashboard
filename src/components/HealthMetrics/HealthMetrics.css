@@ -1,0 +1,108 @@
+.health-metrics-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.health-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  padding-left: 10px;
+  max-width: 300px;
+}
+
+.metric-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  width: 85%;
+  max-width: 220px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .metric-card {
+    width: 80%;
+    max-width: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0;
+    margin-left: -20px;
+  }
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+  .metric-card {
+    width: 100%;
+    max-width: none;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+.metric-icon svg path {
+  stroke-width: 1 !important;
+}
+
+.metric-title {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.metric-date {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.skeleton-image {
+  flex-shrink: 0;
+  max-width: 400px;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skeleton-image img {
+  height: 450px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .health-metrics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skeleton-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .health-metrics {
+    max-width: 100%;
+    width: 100%;
+  }
+}

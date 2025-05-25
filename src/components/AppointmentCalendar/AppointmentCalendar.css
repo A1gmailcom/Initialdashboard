@@ -1,0 +1,213 @@
+.appointment-calendar {
+  background-color: #f9fafe;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 21px rgba(0, 0, 0, 0.05);
+  margin-top: -150px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.calendar-month {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3d49;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-header,
+.date-cell,
+.time-slot {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 0;
+  color: #444;
+}
+
+.day-header {
+  font-weight: 600;
+  color: #333;
+}
+
+.date-cell {
+  background-color: #f1f3f5;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.date-cell.selected {
+  background-color: #4c6ef5;
+  color: white;
+  font-weight: 600;
+}
+
+.time-slot-row {
+  display: contents;
+}
+
+.time-slot {
+  background-color: #e9ecef;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  padding: 6px 0;
+  transition: background 0.3s;
+}
+
+.time-slot.selected {
+  background-color: #5c7cfa;
+  color: white;
+  font-weight: bold;
+}
+
+.appointments-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.appointment-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  width: 200px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-title {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.appointment-time {
+  color: #4c6ef5;
+  font-size: 0.85rem;
+}
+
+.appointment-doctor {
+  color: #495057;
+  font-size: 0.8rem;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.calendar-month {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.calendar-nav-icon {
+  width: 18px;
+  height: 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.calendar-nav-icon:hover {
+  color: #3498db;
+}
+
+.date-cell.selected,
+.time-slot.selected {
+  background-color: #4b6cb7;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.date-cell,
+.time-slot {
+  cursor: pointer;
+}
+.upcoming-schedule {
+  margin-top: 60px;
+}
+
+.upcoming-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.upcoming-day-group {
+  margin-bottom: 20px;
+}
+
+.day-label {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.event-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: #dee2ff;
+  border-radius: 16px;
+  padding: 12px 18px;
+  min-width: 180px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.event-time {
+  font-size: 0.8rem;
+  color: #4c6ef5;
+}
+.right-header-icons-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.icon-button {
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon {
+  color: #2c3e50;
+  width: 20px;
+  height: 20px;
+}
